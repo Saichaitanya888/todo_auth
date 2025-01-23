@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Task</title>
+</head>
+<body>
+    <h1>Update Task: {{ task.title }}</h1>
+    <form action="/update_task/{{ task.id }}" method="POST">
+        <button type="submit">Toggle Completed</button>
+    </form>
+    <a href="/">Back to Tasks</a>
+</body>
+</html>
